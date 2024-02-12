@@ -1,266 +1,253 @@
-
+index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Online Store</title>
-    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <title>Mercy's OnlineStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpg" type="image/x-icon">
 </head>
-
-<header style="margin: 15;" b>
-    <div class="company-name">
-    <h1 style="text-align: center;"><img src="images/logo.png" alt="Shop Logo" height="50">Mercy's Utensils<img src="images/logo.png"Shop Logo" height="50"></h1>
-    </div>
-    <div id="top">
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About Us</a>
-            <a href="#products">Products</a>
-            <a href="#promos">Promos</a>
-            <a href="#contact">Contact Us</a>
-        </nav>
-    </div>
-    <hr>
-</header>
-<main style="margin: 10;">
-    <br>
-    <article id="about">
-        <h2 style="text-align: center;">About Us</h2>
-        <section>
-            <h3>&nbsp;Company History</h3>
-            <figure>
-                <p>Mercy’s Utensils was founded in 1990 with the mission to provide high-quality beauty products that are affordable and accessible to everyone. Over the years, we have grown into a global brand recognized for our commitment to natural, cruelty-free products.</p>
-            </figure>
-        </section>
-        <section>
-            <h3 style="text-align: center;">&nbsp;Company Logo</h3>
-            <figure style="text-align: center;">
-                <img src="images/logo.png" alt="Company Logo">
-                <figcaption><b>My Official Shop Logo</b></figcaption>
-                <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;“The logo of “Mercy Kitchen Utensils” is a symbol of quality and convenience. It features a blue hanger icon, representing kitchen utensils, placed within a white hexagon outlined in blue. Above the hanger, the company name, “Mercy Kitchen Utensils”, is boldly displayed in capitalized letters in a blue font. Below it, “Shop and Enjoy” is written in a lighter shade of blue, adding a friendly touch to the overall design. The logo’s color scheme, primarily blue and white, is simple yet effective, perfectly encapsulating the brand’s identity in the world of kitchenware. The clean blue background further accentuates the elements, making the logo stand out. Every detail in the logo is meticulously crafted, reflecting a brand that is synonymous with reliability, quality, and enjoyment in the kitchen. This logo truly embodies the essence of “Mercy Kitchen Utensils”.</p>
-            </figure>
-        </section>
-        <section>
-            <h3 style="text-align: center;">&nbsp;Owner</h3>
-            <figure style="text-align: center;">
-                <img src="images/owner.jpg" alt="Owner Picture">
-                <figcaption><b>Mercy J. Loquete</b></figcaption>
-                <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;Mercy J. Loquete, an SMCC graduate, founded his IT prof, quickly gaining industry prominence. The firm diversified, acquiring other companies to enhance its tech capabilities. Under Loquete's leadership, the company shifted focus to cloud computing, significantly increasing its market value. Despite competition, Loquete’s strategic decisions ensured market dominance. His commitment to innovation continues to drive the company’s success.</p>
-            </figure>
-        </section>
-    </article>
-    <hr>
-    <style>
-        #categorydiv {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            text-align: center;
-        }
-        #category {
-            width: 100%;
-        }
-    </style>
-    <article id="products" style="text-align: center;">
+<body>
+    <header id="top"><br>
         <br>
-        <h2>PRODUCTS</h2>
-        <div id="categorydiv" style="text-align: center;" st>
-            <section>
-                <h3>Stainless Steel</h3>
-                <hr>
+        <h1>Mercy's Utensils</h1>
+            <nav>
+            <div class="topnav" id="logo">Mercy's Utensils<img src="images/logo.png" alt="Shop Logo" height="30"></div>
+                <ul>
+                    <li><a href="#index.html">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#promos">Promos</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+    </header>
+    <main style="text-align: center;">
+        <br>
+        <article id="about">
+            <h2>About Us</h2>
+            <section id="companyhistory">
+                <h3>&nbsp;Company History</h3>
                 <figure>
-                    <img src="images/1.webp" alt="Set 1" height="100">
-                    <figcaption>6pcs Kitchen Knife Block Set</figcaption>
-                    <p style="font-size: small;">Price Php 1,199.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/2.webp" alt="Set 2" height="100">
-                    <figcaption>5pcs Nylon Kitchen Tool Set</figcaption>
-                    <p style="font-size: small;">Price Php 979.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/3.webp" alt="Set 3" height="100">
-                    <figcaption>4pcs Tool Set</figcaption>
-                    <p style="font-size: small;">Price Php 399.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/4.webp" alt="Set 4" height="100">
-                    <figcaption>5pcs Nylon Kitchen Tool Set With Holder</figcaption>
-                    <p style="font-size: small;">Price Php 629.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/5.webp" alt="Set 5" height="100">
-                    <figcaption>24pc Stainless Steel Cutlery Set</figcaption>
-                    <p style="font-size: small;">Price Php 623.80</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Mercy’s Utensils was founded in 1990 with the mission to provide high-quality beauty products that are affordable and accessible to everyone. Over the years, we have grown into a global brand recognized for our commitment to natural, cruelty-free products.</p>
                 </figure>
             </section>
-
-            <section>
-                <h3>Wooden Utensils</h3>
-                <hr>
-                <figure>
-                    <img src="images/6.webp" alt="Set 6" height="100">
-                    <figcaption>Premium 4pc Bamboo Kitchen Tools Utensil Set</figcaption>
-                    <p style="font-size: small;">Price Php 549.75</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/7.webp" alt="Set 7" height="100">
-                    <figcaption>Premium Bamboo Spaghetti Server Cooking Essential Modern Italian Design</figcaption>
-                    <p style="font-size: small;">Php 149.75</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/8.webp" alt="Set 8" height="100">
-                    <figcaption>Premium Wooden Cutting Board</figcaption>
-                    <p style="font-size: small;">Price Php 519.75</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/9.webp" alt="Set 9" height="100">
-                    <figcaption>Bamboo Cheese & Wine Glass Holder</figcaption>
-                    <p style="font-size: small;">Price Php 449.75</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
+            <section id="companylogo">
+                <h3>&nbsp;Company Logo</h3>
+                <figure style="text-align: center;">
+                    <img src="images/logo.png" alt="Company Logo" height="200">
+                    <figcaption>My Official Shop Logo</figcaption>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;“The logo of “Mercy Kitchen Utensils” is a symbol of quality and convenience. It features a blue hanger icon, representing kitchen utensils, placed within a white hexagon outlined in blue. Above the hanger, the company name, “Mercy Kitchen Utensils”, is boldly displayed in capitalized letters in a blue font. Below it, “Shop and Enjoy” is written in a lighter shade of blue, adding a friendly touch to the overall design. The logo’s color scheme, primarily blue and white, is simple yet effective, perfectly encapsulating the brand’s identity in the world of kitchenware. The clean blue background further accentuates the elements, making the logo stand out. Every detail in the logo is meticulously crafted, reflecting a brand that is synonymous with reliability, quality, and enjoyment in the kitchen. This logo truly embodies the essence of “Mercy Kitchen Utensils”.</p>
                 </figure>
             </section>
-
-            <section>
-                <h3>Bakeware</h3>
-                <hr>
-                <figure>
-                    <img src="images/10.webp" alt="Set 10" height="100">
-                    <figcaption>Premium Baking Accessory Batter Dispenser</figcaption>
-                    <p style="font-size: small;">Price Php 349.75</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/11.webp" alt="Set 11" height="100">
-                    <figcaption>Square Nonstick Springform Cake Mold Cake Pan Set</figcaption>
-                    <p style="font-size: small;">Price Php 935.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/12.webp" alt="Set 12" height="100">
-                    <figcaption>Premium Pizza Cutting Board 3pc-Kitchen</figcaption>
-                    <p style="font-size: small;">Price Php 879.75</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
-                </figure>
-                <br>
-                <figure>
-                    <img src="images/13.webp" alt="Set 13" height="100">
-                    <figcaption>3-Tiered Glass Serving Stand For Pastry Serving Tray Platter For tea party wedding and Birthday Party</figcaption>
-                    <p style="font-size: small;">Price Php 1,635.00</p>
-                    <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
-                    <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
-                        <span class="text">Add to Cart</span>
-                    </button>
+            <section id="owner">
+                <h3>&nbsp;Owner</h3>
+                <figure style="text-align: center;">
+                    <img src="images/owner.jpg" alt="Image of Owner" height="250">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Mercy J. Loquete, an SMCC graduate, founded his IT prof, quickly gaining industry prominence. The firm diversified, acquiring other companies to enhance its tech capabilities. Under Loquete's leadership, the company shifted focus to cloud computing, significantly increasing its market value. Despite competition, Loquete’s strategic decisions ensured market dominance. His commitment to innovation continues to drive the company’s success./p>
                 </figure>
             </section>
-        </div>
-    </article>
-    <hr><article id="promos" style="text-align: center;">
-        <h2>PROMOS</h2>
-        <section>
+        </article>
+        <hr>
+        <article id="products" style="text-align: center;">
             <br>
-            <figure>
-                <h3>FREE SHIPPING</h3>
-                <img src="images/freeship.png" alt="Free Shipping Image" width="150">
-                <figcaption>FREE SHIPPING UP TO May 23</figcaption>
-                <p style="text-align: center; font-size: small;">
-                    Free Shipping for Orders Php 5,000.00 and Above up to May 23, 2024 Only!
-                </p>
-            </figure>
-            <br><br><br>
-            <figure>
-                <h3>DISCOUNT</h3>
-                <img src="images/discount.webp" alt="Discount Image" width="150">
-                <figcaption>50% OFF ON PURCHASES UP TO May 23</figcaption>
-                <p style="text-align: center; font-size: small;">
-                    Get a 50% Discount on your Next Purchases up to May 23, 2024 Only!
-                </p>
+            <h2>PRODUCTS</h2>
+            <div id="categorydiv">
+                <section id="category">
+                    <h3>Stainless Steel</h3>
+                    <hr>
+                    <figure style="text-align: center;">
+                        <img src="images/1.webp" alt="Set 1" height="100">
+                        <figcaption>6pcs Kitchen Knife Block Set</figcaption>
+                        <p style="font-size: small;">Price Php 1,199.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/2.webp" alt="Set 2" height="100">
+                        <figcaption>5pcs Nylon Kitchen Tool Set</figcaption>
+                        <p style="font-size: small;">Price Php 979.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/3.webp" alt="Set 3" height="100">
+                        <figcaption>4pcs Tool Set</figcaption>
+                        <p style="font-size: small;">Price Php 399.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/4.webp" alt="Set 4" height="100">
+                        <figcaption>5pcs Nylon Kitchen Tool Set With Holder</figcaption>
+                        <p style="font-size: small;">Price Php 629.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/5.webp" alt="Set 5" height="100">
+                        <figcaption>24pc Stainless Steel Cutlery Set</figcaption>
+                        <p style="font-size: small;">Price Php 623.80</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                </section>
+    
+                <section id="category">
+                    <h3>Wooden Utensils</h3>
+                    <hr>
+                    <figure>
+                        <img src="images/6.webp" alt="Set 6" height="100">
+                        <figcaption>Premium 4pc Bamboo Kitchen Tools Utensil Set</figcaption>
+                        <p style="font-size: small;">Price Php 549.75</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/7.webp" alt="Set 7" height="100">
+                        <figcaption>Premium Bamboo Spaghetti Server Cooking Essential Modern Italian Design</figcaption>
+                        <p style="font-size: small;">Php 149.75</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/8.webp" alt="Set 8" height="100">
+                        <figcaption>Premium Wooden Cutting Board</figcaption>
+                        <p style="font-size: small;">Price Php 519.75</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/9.webp" alt="Set 9" height="100">
+                        <figcaption>Bamboo Cheese & Wine Glass Holder</figcaption>
+                        <p style="font-size: small;">Price Php 449.75</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                </section>
+    
+                <section id="category">
+                    <h3>Bakeware</h3>
+                    <hr>
+                    <figure>
+                        <img src="images/10.webp" alt="Set 10" height="100">
+                        <figcaption>Premium Baking Accessory Batter Dispenser</figcaption>
+                        <p style="font-size: small;">Price Php 349.75</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/11.webp" alt="Set 11" height="100">
+                        <figcaption>Square Nonstick Springform Cake Mold Cake Pan Set</figcaption>
+                        <p style="font-size: small;">Price Php 935.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/12.webp" alt="Set 12" height="100">
+                        <figcaption>Premium Pizza Cutting Board 3pc-Kitchen</figcaption>
+                        <p style="font-size: small;">Price Php 879.75</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                    <br>
+                    <figure>
+                        <img src="images/13.webp" alt="Set 13" height="100">
+                        <figcaption>3-Tiered Glass Serving Stand For Pastry Serving Tray Platter For tea party wedding and Birthday Party</figcaption>
+                        <p style="font-size: small;">Price Php 1,635.00</p>
+                        <input type="number" min="1" size="2" class="quantity" name="quantity" id="quantity" value="1" mm-min="1" mm-stock-max="NaN" step="1" mm-step="1">
+                        <button type="submit" name="add" class="action_button add_to_cart addToCartBtn" data-label="Add to Cart"="">
+                            <span class="text">Add to Cart</span>
+                        </button>
+                    </figure>
+                </section>
+            </div>
+        </article>
+        <hr>
+        <article id="promos">
+            <h2>PROMOS</h2>
+            <section>
                 <br>
-            </figure>
-        </section>
-    </article>
+                <figure id="freeshipping">
+                    <h3>FREE SHIPPING</h3>
+                    <img src="images/freeship.png" alt="Free Shipping Image" width="150">
+                    <figcaption>FREE SHIPPING UP TO June 23</figcaption>
+                    <p style="text-align: center;">Free Shipping for Orders Php 5,000.00 and Above up to June 23, 2024 Only!</p>
+                </figure>
+                <br><br><br>
+                <figure id="discount">
+                    <h3>DISCOUNT</h3>
+                    <img src="images/discount.webp" alt="Discount Image" width="150">
+                    <figcaption>25% OFF ON PURCHASES UP TO June 23</figcaption>
+                    <p style="text-align: center;">Get a 25% Discount on your Next Purchases up to June 23, 2024 Only!</p>
+                    <br>
+                </figure>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <h2>CONTACT US</h2>
+            <div id="contact">
+                <section style="text-align: center;">
+                    <h3><img src="images/gmail.png" alt="" height="15">GMAIL</h3>
+                    <figure>
+                        <p style="text-align: center;"><a href="mailto:vchampabuan@gmail.com"><b>vchampabuan@gmail.com</b></a></p>
+                    </figure>
+                </section>
+                <section>
+                    <h3><img src="images/call.png" alt="Call Image" width="15">CALL US</h3>
+                    <figure>
+                        <p style="text-align: center;">09987654321</p>
+                    </figure>
+                </section>
+                <section>
+                    <h3><img src="images/message.png" alt="Message" height="20">Message</h3>
+                        <form action="https://httpbin.org/get" method="get" target="_blank">
+                            <textarea name="messagebox" id="messagebox" cols="10" rows="2"></textarea><br>
+                            <button type="submit">Send</button>
+                        </form>
+                </section>
+            </div>
+        </article>
+    </main>
     <hr>
-    <article id="contact" style="text-align: center;">
-        <h2>CONTACT US</h2>
-        <div id="contactdiv" style="text-align: center;">
-            <section>
-                <h3>GMAIL</h3>
-                <hr>
-                <figure>
-                    <img src="images/gmail.png" alt="GMAIL Image" width="200">
-                    <p style="text-align: center;"><a href="mailto:mercyloquete6@gmail.com">mercyloquete6@gmail.com</a></p>
-                </figure>
-            </section>
-            <section>
-                <h3>CALL US</h3>
-                <hr>
-                <figure>
-                    <img src="images/call.png" alt="Call Image" width="150">
-                    <p style="text-align: center;">09123456789</p>
-                </figure>
-            </section>
-        </div>
-    </article>
-</main>
-<hr>
-<footer>
-    <p style="text-align: center;">All Rights Reserved &copy;<b>Mercy J. Loquete</b> 2024</p>
-    <p style="text-align: center;"><a href="mailto:mercyloquete6@gmail.com">mercyloquete6@gmail.com</a></p>
-    <p style="text-align: center; font-size: small;"><a href="#top">Back to Top</a></p>
-</footer>
+    <footer>
+        <p style="text-align: center;">All Rights Reserved &copy;<b>Vicfel Champ M. Abuan</b> 2024</p>
+        <p style="text-align: center; font-size: small;"><a href="#top">Back to Top</a></p>
+    </footer>
 </body>
 </html>
